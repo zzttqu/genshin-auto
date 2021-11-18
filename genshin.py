@@ -1,7 +1,7 @@
 import pyautogui
 import time
 from matchPicture import imgAutoClick
-
+import pyperclip
 # 获取当前屏幕分辨率
 screenWidth, screenHeight = pyautogui.size()
 X, Y = imgAutoClick('QQ.png')
@@ -26,12 +26,11 @@ for _ in range(10):
     pyautogui.press('space')
     pyautogui.typewrite(message='tql', interval=0)
     pyautogui.press('enter')
-  #  time.sleep(0.05)
+    #  time.sleep(0.05)
     pyautogui.press('enter')
-   # time.sleep(0.05)
+
 
 # while True:
 #     currentMouseX, currentMouseY = pyautogui.position()
 #     print(currentMouseX, currentMouseY)
 #     time.sleep(0.5)
-
