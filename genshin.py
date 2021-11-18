@@ -20,16 +20,15 @@ pyautogui.doubleClick(x=X, y=Y, interval=0.0, button='left', duration=0.0, tween
 # 这个是pyautogui的图片匹配，有一点不准
 # X, Y = pyautogui.locateCenterOnScreen('fhy.png')
 # 这一行是双击
-
-for _ in range(2):
-    time.sleep(0.5)
-    pyautogui.typewrite(message='dalao', interval=0.1)
+time.sleep(0.5)
+for _ in range(10):
+    pyautogui.typewrite(message='dalao', interval=0)
     pyautogui.press('space')
-    pyautogui.typewrite(message='tql', interval=0.1)
+    pyautogui.typewrite(message='tql', interval=0)
     pyautogui.press('enter')
-    time.sleep(0.1)
+  #  time.sleep(0.05)
     pyautogui.press('enter')
-    time.sleep(0.5)
+   # time.sleep(0.05)
 
 # while True:
 #     currentMouseX, currentMouseY = pyautogui.position()
