@@ -15,9 +15,10 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/yolov5" />
   </component>
   <component name="ProjectId" id="20xcsNgmcaXtPYBu7Bez4NbIs6X" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -168,6 +169,7 @@
       <workItem from="1642257164204" duration="2516000" />
       <workItem from="1642302006138" duration="8568000" />
       <workItem from="1642343689171" duration="45000" />
+      <workItem from="1642431989713" duration="336000" />
     </task>
     <servers />
   </component>
