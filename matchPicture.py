@@ -1,12 +1,9 @@
-import time
-
-import cv2
-import pyautogui
+import cv2.cv2 as cv2
 from PIL import ImageGrab
 import numpy as np
 
 
-def imgAutoClick(template, action=0):
+def imgMatch(template):
     screen = ImageGrab.grab()
     template = cv2.imread(template, 0)
     screen = cv2.cvtColor(np.array(screen), cv2.COLOR_RGB2GRAY)
@@ -18,9 +15,10 @@ def imgAutoClick(template, action=0):
     left = min_loc[1]
     x = [top, left, w, h]
     top_left = min_loc  # 左上角的位置
+    # opencv的坐标点以左上角为原点
     bottom_right = (top_left[0] + w, top_left[1] + h)  # 右下角的位置
-    print(top + h / 2, left + w / 2)
-    return top + h / 3, left + w / 3
+
+    return top + h / 2, left + w / 3
 
 # imgAutoClick(template='QQ.png')
 # # 这部分是测试是否准确
